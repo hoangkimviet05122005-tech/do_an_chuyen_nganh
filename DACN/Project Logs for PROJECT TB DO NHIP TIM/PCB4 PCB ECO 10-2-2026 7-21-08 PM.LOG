@@ -1,0 +1,26 @@
+Change Component Designator: OldDesignator=+5V NewDesignator=H1
+Change Component Designator: OldDesignator=AD8232 NewDesignator=H2
+Change Component Designator: OldDesignator=BUZZER NewDesignator=LS1
+Change Component Designator: OldDesignator=C1/10uF NewDesignator=C1
+Change Component Designator: OldDesignator=C2/10uF NewDesignator=C2
+Change Component Designator: OldDesignator=C3/104 NewDesignator=C3
+Change Component Designator: OldDesignator=C4/104 NewDesignator=C4
+Change Component Designator: OldDesignator=C5/104 NewDesignator=C5
+Change Component Designator: OldDesignator=C6/104 NewDesignator=C6
+Change Component Designator: OldDesignator=C7/104 NewDesignator=C7
+Change Component Designator: OldDesignator=DOWN NewDesignator=DOWN1
+Change Component Designator: OldDesignator=LUU ANH NewDesignator=H4
+Change Component Designator: OldDesignator=MAN HINH TFT NewDesignator=H3
+Change Component Designator: OldDesignator=MCP6002 NewDesignator=U1
+Change Component Designator: OldDesignator=Q1/2N222 NewDesignator=Q1
+Change Component Designator: OldDesignator=R1/1K NewDesignator=R1
+Change Component Designator: OldDesignator=R2/10K NewDesignator=R2
+Change Component Designator: OldDesignator=R3/10K NewDesignator=R3
+Change Component Designator: OldDesignator=R4/39K NewDesignator=R4
+Change Component Designator: OldDesignator=R5/39K NewDesignator=R5
+Change Component Designator: OldDesignator=R6/39K NewDesignator=R6
+Change Component Designator: OldDesignator=R7/39K NewDesignator=R7
+Change Component Designator: OldDesignator=UP NewDesignator=UP1
+Change Component Description : Designator=U1 Old Description=Microchip ,Dual Op Amp,1MHz CMOS,Rail to Rail,3V,5V,8-Pin PDIP New Description=Microchip ,Dual Op Amp,1MHz CMOS,Rail to Rail,3V,5V,8-Pin PDIP | Microchip Technology Inc. MCP6002-I/P
+Added Pin To Net: NetName=TX Pin=KIT STM32F103C8T6-6
+Added Pin To Net: NetName=RX Pin=KIT STM32F103C8T6-7
