@@ -29,7 +29,4 @@ dacn\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 dacn\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 dacn\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
 dacn\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-dacn\main.o: D:\stm\ARM\ARMCC\Bin\..\include\math.h
-dacn\main.o: D:\stm\ARM\ARMCC\Bin\..\include\stdio.h
-dacn\main.o: D:\stm\ARM\ARMCC\Bin\..\include\string.h
-dacn\main.o: D:\stm\ARM\ARMCC\Bin\..\include\stdbool.h
+dacn\main.o: ../Core/Inc/ecg_app.h

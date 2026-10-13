@@ -1,7 +1,7 @@
 Dependencies for Project 'dacn', Target 'dacn': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
 F (startup_stm32f103xb.s)(0x6AC1C491)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o dacn\startup_stm32f103xb.o --depend dacn\startup_stm32f103xb.d)
-F (../Core/Src/main.c)(0x6ACD0440)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\main.o --omf_browse dacn\main.crf --depend dacn\main.d)
+F (../Core/Src/main.c)(0x6ACDAE2F)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\main.o --omf_browse dacn\main.crf --depend dacn\main.d)
 I (../Core/Inc/main.h)(0x6ABA2AF3)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69C4B38D)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6AC1C48F)
@@ -31,10 +31,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x69C4B38D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x69C4B38D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x69C4B38D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69C4B38D)
-I (D:\stm\ARM\ARMCC\include\math.h)(0x5D9AE022)
-I (D:\stm\ARM\ARMCC\include\stdio.h)(0x5D9AE02A)
-I (D:\stm\ARM\ARMCC\include\string.h)(0x5D9AE028)
-I (D:\stm\ARM\ARMCC\include\stdbool.h)(0x5D9AE028)
+I (../Core/Inc/ecg_app.h)(0x6ACD496C)
 F (../Core/Src/stm32f1xx_it.c)(0x6AC1C48F)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\stm32f1xx_it.o --omf_browse dacn\stm32f1xx_it.crf --depend dacn\stm32f1xx_it.d)
 I (../Core/Inc/main.h)(0x6ABA2AF3)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69C4B38D)
@@ -96,6 +93,271 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x69C4B38D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x69C4B38D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x69C4B38D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69C4B38D)
+F (..\Core\Src\buttons.c)(0x6ACD496C)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\buttons.o --omf_browse dacn\buttons.crf --depend dacn\buttons.d)
+I (../Core/Inc/main.h)(0x6ABA2AF3)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69C4B38D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6AC1C48F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x69C4B38D)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x69C4B356)
+I (D:\stm\ARM\ARMCC\include\stdint.h)(0x5D9AE028)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C4B356)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x69C4B38D)
+I (D:\stm\ARM\ARMCC\include\stddef.h)(0x5D9AE028)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69C4B38D)
+I (../Core/Inc/ecg_config.h)(0x6ACD4942)
+I (../Core/Inc/ecg_state.h)(0x6ACD4942)
+I (D:\stm\ARM\ARMCC\include\stdbool.h)(0x5D9AE028)
+I (../Core/Inc/ecg_display.h)(0x6ACD495E)
+I (../Core/Inc/ecg_app.h)(0x6ACD496C)
+I (../Core/Inc/buttons.h)(0x6ACD496C)
+F (..\Core\Src\ecg_app.c)(0x6ACD496C)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\ecg_app.o --omf_browse dacn\ecg_app.crf --depend dacn\ecg_app.d)
+I (../Core/Inc/main.h)(0x6ABA2AF3)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69C4B38D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6AC1C48F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x69C4B38D)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x69C4B356)
+I (D:\stm\ARM\ARMCC\include\stdint.h)(0x5D9AE028)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C4B356)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x69C4B38D)
+I (D:\stm\ARM\ARMCC\include\stddef.h)(0x5D9AE028)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69C4B38D)
+I (../Core/Inc/ecg_config.h)(0x6ACD4942)
+I (../Core/Inc/ecg_state.h)(0x6ACD4942)
+I (D:\stm\ARM\ARMCC\include\stdbool.h)(0x5D9AE028)
+I (../Core/Inc/ecg_sampling.h)(0x6ACD495E)
+I (../Core/Inc/ecg_dsp.h)(0x6ACD495E)
+I (../Core/Inc/ecg_status.h)(0x6ACD495E)
+I (../Core/Inc/ecg_display.h)(0x6ACD495E)
+I (../Core/Inc/ecg_uart.h)(0x6ACD496C)
+I (../Core/Inc/nokia5110.h)(0x6ACD4942)
+I (../Core/Inc/buttons.h)(0x6ACD496C)
+I (../Core/Inc/ecg_app.h)(0x6ACD496C)
+F (..\Core\Src\ecg_display.c)(0x6ACD496C)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\ecg_display.o --omf_browse dacn\ecg_display.crf --depend dacn\ecg_display.d)
+I (D:\stm\ARM\ARMCC\include\math.h)(0x5D9AE022)
+I (D:\stm\ARM\ARMCC\include\stdio.h)(0x5D9AE02A)
+I (D:\stm\ARM\ARMCC\include\string.h)(0x5D9AE028)
+I (../Core/Inc/main.h)(0x6ABA2AF3)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69C4B38D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6AC1C48F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x69C4B38D)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x69C4B356)
+I (D:\stm\ARM\ARMCC\include\stdint.h)(0x5D9AE028)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C4B356)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x69C4B38D)
+I (D:\stm\ARM\ARMCC\include\stddef.h)(0x5D9AE028)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69C4B38D)
+I (../Core/Inc/ecg_state.h)(0x6ACD4942)
+I (D:\stm\ARM\ARMCC\include\stdbool.h)(0x5D9AE028)
+I (../Core/Inc/nokia5110.h)(0x6ACD4942)
+I (../Core/Inc/ecg_display.h)(0x6ACD495E)
+F (..\Core\Src\ecg_dsp.c)(0x6ACD495E)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\ecg_dsp.o --omf_browse dacn\ecg_dsp.crf --depend dacn\ecg_dsp.d)
+I (D:\stm\ARM\ARMCC\include\math.h)(0x5D9AE022)
+I (../Core/Inc/ecg_config.h)(0x6ACD4942)
+I (../Core/Inc/ecg_state.h)(0x6ACD4942)
+I (D:\stm\ARM\ARMCC\include\stdint.h)(0x5D9AE028)
+I (D:\stm\ARM\ARMCC\include\stdbool.h)(0x5D9AE028)
+I (../Core/Inc/ecg_dsp.h)(0x6ACD495E)
+F (..\Core\Src\ecg_sampling.c)(0x6ACD495E)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\ecg_sampling.o --omf_browse dacn\ecg_sampling.crf --depend dacn\ecg_sampling.d)
+I (../Core/Inc/main.h)(0x6ABA2AF3)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69C4B38D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6AC1C48F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x69C4B38D)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x69C4B356)
+I (D:\stm\ARM\ARMCC\include\stdint.h)(0x5D9AE028)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C4B356)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x69C4B38D)
+I (D:\stm\ARM\ARMCC\include\stddef.h)(0x5D9AE028)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69C4B38D)
+I (../Core/Inc/ecg_config.h)(0x6ACD4942)
+I (../Core/Inc/ecg_sampling.h)(0x6ACD495E)
+I (D:\stm\ARM\ARMCC\include\stdbool.h)(0x5D9AE028)
+F (..\Core\Src\ecg_state.c)(0x6ACD4942)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\ecg_state.o --omf_browse dacn\ecg_state.crf --depend dacn\ecg_state.d)
+I (../Core/Inc/ecg_state.h)(0x6ACD4942)
+I (D:\stm\ARM\ARMCC\include\stdint.h)(0x5D9AE028)
+I (D:\stm\ARM\ARMCC\include\stdbool.h)(0x5D9AE028)
+F (..\Core\Src\ecg_status.c)(0x6ACD495E)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\ecg_status.o --omf_browse dacn\ecg_status.crf --depend dacn\ecg_status.d)
+I (../Core/Inc/main.h)(0x6ABA2AF3)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69C4B38D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6AC1C48F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x69C4B38D)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x69C4B356)
+I (D:\stm\ARM\ARMCC\include\stdint.h)(0x5D9AE028)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C4B356)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x69C4B38D)
+I (D:\stm\ARM\ARMCC\include\stddef.h)(0x5D9AE028)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69C4B38D)
+I (../Core/Inc/ecg_config.h)(0x6ACD4942)
+I (../Core/Inc/ecg_state.h)(0x6ACD4942)
+I (D:\stm\ARM\ARMCC\include\stdbool.h)(0x5D9AE028)
+I (../Core/Inc/ecg_status.h)(0x6ACD495E)
+F (..\Core\Src\ecg_uart.c)(0x6ACD496C)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\ecg_uart.o --omf_browse dacn\ecg_uart.crf --depend dacn\ecg_uart.d)
+I (../Core/Inc/main.h)(0x6ABA2AF3)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69C4B38D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6AC1C48F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x69C4B38D)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x69C4B356)
+I (D:\stm\ARM\ARMCC\include\stdint.h)(0x5D9AE028)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C4B356)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x69C4B38D)
+I (D:\stm\ARM\ARMCC\include\stddef.h)(0x5D9AE028)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69C4B38D)
+I (../Core/Inc/ecg_config.h)(0x6ACD4942)
+I (../Core/Inc/ecg_state.h)(0x6ACD4942)
+I (D:\stm\ARM\ARMCC\include\stdbool.h)(0x5D9AE028)
+I (../Core/Inc/ecg_uart.h)(0x6ACD496C)
+F (..\Core\Src\font5x7.c)(0x6ACD4942)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\font5x7.o --omf_browse dacn\font5x7.crf --depend dacn\font5x7.d)
+I (../Core/Inc/font5x7.h)(0x6ACD4942)
+I (D:\stm\ARM\ARMCC\include\stdint.h)(0x5D9AE028)
+F (..\Core\Src\nokia5110.c)(0x6ACD4942)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\nokia5110.o --omf_browse dacn\nokia5110.crf --depend dacn\nokia5110.d)
+I (../Core/Inc/main.h)(0x6ABA2AF3)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69C4B38D)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6AC1C48F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x69C4B38D)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x69C4B38E)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x69C4B356)
+I (D:\stm\ARM\ARMCC\include\stdint.h)(0x5D9AE028)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C4B356)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C4B356)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x69C4B38E)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x69C4B38D)
+I (D:\stm\ARM\ARMCC\include\stddef.h)(0x5D9AE028)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x69C4B38D)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69C4B38D)
+I (D:\stm\ARM\ARMCC\include\string.h)(0x5D9AE028)
+I (../Core/Inc/nokia5110.h)(0x6ACD4942)
+I (../Core/Inc/font5x7.h)(0x6ACD4942)
+F (..\Core\Src\ecg_rr.c)(0x6ACE04FE)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\ecg_rr.o --omf_browse dacn\ecg_rr.crf --depend dacn\ecg_rr.d)
+I (../Core/Inc/ecg_rr.h)(0x6ACE05C5)
+I (D:\stm\ARM\ARMCC\include\stdint.h)(0x5D9AE028)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x69C4B38D)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\stm32f1xx_hal_gpio_ex.o --omf_browse dacn\stm32f1xx_hal_gpio_ex.crf --depend dacn\stm32f1xx_hal_gpio_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x69C4B38D)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x6AC1C48F)
@@ -531,7 +793,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x69C4B38D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x69C4B38D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x69C4B38D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x69C4B38D)
-F (../Core/Src/system_stm32f1xx.c)(0x69C4B38E)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\system_stm32f1xx.o --omf_browse dacn\system_stm32f1xx.crf --depend dacn\system_stm32f1xx.d)
+F (../Core/Src/system_stm32f1xx.c)(0x69C4B38E)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dacn-ID:\stm\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\stm\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dacn\system_stm32f1xx_1.o --omf_browse dacn\system_stm32f1xx_1.crf --depend dacn\system_stm32f1xx_1.d)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x69C4B38E)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x69C4B38E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x69C4B356)

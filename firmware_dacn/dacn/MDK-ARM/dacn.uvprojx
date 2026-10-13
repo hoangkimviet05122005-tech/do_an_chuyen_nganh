@@ -407,6 +407,61 @@
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32f1xx_hal_msp.c</FilePath>
             </File>
+            <File>
+              <FileName>buttons.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\buttons.c</FilePath>
+            </File>
+            <File>
+              <FileName>ecg_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\ecg_app.c</FilePath>
+            </File>
+            <File>
+              <FileName>ecg_display.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\ecg_display.c</FilePath>
+            </File>
+            <File>
+              <FileName>ecg_dsp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\ecg_dsp.c</FilePath>
+            </File>
+            <File>
+              <FileName>ecg_sampling.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\ecg_sampling.c</FilePath>
+            </File>
+            <File>
+              <FileName>ecg_state.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\ecg_state.c</FilePath>
+            </File>
+            <File>
+              <FileName>ecg_status.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\ecg_status.c</FilePath>
+            </File>
+            <File>
+              <FileName>ecg_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\ecg_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>font5x7.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\font5x7.c</FilePath>
+            </File>
+            <File>
+              <FileName>nokia5110.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\nokia5110.c</FilePath>
+            </File>
+            <File>
+              <FileName>ecg_rr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\ecg_rr.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
